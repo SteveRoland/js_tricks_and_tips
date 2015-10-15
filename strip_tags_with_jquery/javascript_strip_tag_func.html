@@ -1,0 +1,20 @@
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script>
+
+function strip_tags(txt) {
+	var result = $(txt).text(); // strip tags.
+	if(result == "") result = txt; // only text 일 경우 text() 값이 없다.
+
+	return result;
+}
+
+$(function() {
+	var html = "<p>asdf</p>";
+	var html2 = "aasdf";
+
+	console.log(strip_tags(html));
+	console.log(strip_tags(html2));
+})
+
+</script>
+
